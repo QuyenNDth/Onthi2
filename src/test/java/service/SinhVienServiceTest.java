@@ -28,6 +28,6 @@ private SinhVienService sinhVienService;
 @Test
     void addSinhVienInvalidAge(){
     Exception exception = assertThrows(IllegalArgumentException.class, () -> new SinhVien("1","Quyen",20,9.0f, 2, "CNTT"));
-    assertEquals("Tuổi phải lớn hơn 18", exception.getMessage());
+    assertEquals("Tuổi phải lớn hơn 18 yeu linh", exception.getMessage());
 }
 }
